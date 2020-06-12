@@ -1,7 +1,7 @@
-# GooseGame
-https://en.wikipedia.org/wiki/Game_of_the_Goose
+# Game of Goose
+(https://en.wikipedia.org/wiki/Game_of_the_Goose)
 
-##Equipment
+## Equipment
 
 The game is played on a spiral shaped board consisting of 63 spaces. There are four differently coloured pieces - often in the shape of a goose and two six-sided dice.
 
@@ -11,7 +11,7 @@ Pieces are placed on the starting space at the outside of the spiral. Highest ro
 
 The Game of Goose is a simple race game - first person to reach space ** 63 ** wins.
 
-##Play
+## Play
 
 Players take turns to roll the dice and moved their piece forward by the sum of the two dice.
 
@@ -42,7 +42,7 @@ The following spaces are called Hazard spaces and are usually illustrated to mat
 
 
 
-##Winning the Game
+## Winning the Game
 
 To win the game, a piece must land exactly on space ** 63 **.
 
