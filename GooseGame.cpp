@@ -12,8 +12,6 @@ g++ -o GooseGame GooseGame.cpp Game.cpp Player.cpp Dice.cpp Space.cpp Board.cpp 
 #include <Game.h>
 
 int main(int argc, char **argv) {
-	Game game(3);
-	game.doIt();
 }
 
 
