@@ -1,0 +1,5 @@
+class GooseCase
+!!!138370.cpp!!!	~GooseCase()
+	// TODO Auto-generated destructor stub
+!!!138498.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): catch the goose !\n";

@@ -1,0 +1,2643 @@
+format 222
+"GooseGame" // GooseGame
+  revision 1
+  modified_by 2 "eric"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/home/eric/Documents/1_stsIrisSousSvn/cdt/trunk/gitHub/GooseGame/"
+  cpp_src_dir "/home/eric/Documents/1_stsIrisSousSvn/cdt/trunk/gitHub/GooseGame/"
+  classview 134530 "GooseGame"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 134530 "Board"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 134530 "NB_CASES"
+	class_attribute const_attribute private explicit_type "ushort"
+	init_value "= 64"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "associations
+"
+      end
+
+      attribute 134658 "numbers"
+	class_attribute private explicit_type "unsigned short ,Board::NB_CASES"
+	stereotype "array"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 134530 "Board"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134658 "~Board"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134786 "getCases"
+	preserve_cpp_body_indent public explicit_return_type "Cases"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} & ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 137602 // Cases (<directional composition>)
+	relation 137602 *-->
+	  a role_name "Cases" multiplicity "64" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	    classrelation_ref 137602 // Cases (<directional composition>)
+	  b parent class_ref 134914 // Case
+      end
+    end
+
+    class 134914 "Case"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 134786 "number"
+	protected explicit_type "ushort"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "attribut, property
+"
+      end
+
+      operation 135810 "Case"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}${)} :
+		number(0) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135938 "Case"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)} :
+		number(number) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136322 "~Case"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136450 "getNumber"
+	preserve_cpp_body_indent const public explicit_return_type "ushort"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+    end
+
+    class 135042 "BridgeCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 134786 // <generalisation>
+	relation 134786 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 134786 // <generalisation>
+	  b parent class_ref 135170 // SurpriseCase
+      end
+
+      operation 135426 "BridgeCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	    defaultvalue "6"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)} : SurpriseCase(number) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135554 "~BridgeCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135682 "doSomeThing"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 135170 "SurpriseCase"
+      abstract visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 136834 // <generalisation>
+	relation 136834 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 136834 // <generalisation>
+	  b parent class_ref 134914 // Case
+      end
+
+      attribute 135682 "NB_CASES"
+	class_attribute const_attribute public explicit_type "int"
+	init_value "= 12"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "inheritance : generalization or specialization
+SurpriseCase IS A Case
+Case is named Base class (mother Class)
+SurpriseCase is name derived class (daughter class)
+"
+      end
+
+      operation 141826 "SurpriseCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}${)}:Case() {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141954 "SurpriseCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:Case(number) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142082 "~SurpriseCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142210 "doSomeThing"
+	abstract private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	
+	
+	
+	
+      end
+    end
+
+    class 135298 "Pawn"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 136194 // player (<unidirectional association>)
+	relation 136194 --->
+	  a role_name "player" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} & ${name}${value};
+"
+	    classrelation_ref 136194 // player (<unidirectional association>)
+	  b parent class_ref 136066 // Player
+      end
+
+      classrelation 136322 // board (<unidirectional association>)
+	relation 136322 --->
+	  a role_name "board" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} & ${name}${value};
+"
+	    classrelation_ref 136322 // board (<unidirectional association>)
+	  b parent class_ref 134530 // Board
+      end
+
+      classrelation 136450 // aCase (<unidirectional association>)
+	relation 136450 --->
+	  a role_name "aCase" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 136450 // aCase (<unidirectional association>)
+	  b parent class_ref 134914 // Case
+      end
+
+      operation 139778 "Pawn"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "player" type class_ref 136066 // Player
+	  param inout name "board" type class_ref 134530 // Board
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${abstract};"
+	cpp_def "//Pawn::Pawn():player(*(new Player())),board(*(new Board())){
+//};
+//
+
+${inline}${typeprefix}${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)} :
+		player(player), board(board), aCase(board.getStartCase()) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139906 "Pawn"
+	public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${abstract};"
+	
+	
+	
+	
+      end
+
+      operation 140034 "move"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "steps" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "for test purpose"
+      end
+
+      operation 140162 "~Pawn"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140290 "getCase"
+	preserve_cpp_body_indent const public return_type class_ref 134914 // Case
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} * ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140418 "setCase"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param inout name "aCase" type class_ref 134914 // Case
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140546 "getPlayer"
+	preserve_cpp_body_indent const constvalue public return_type class_ref 136066 // Player
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} & ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 135426 "DeathCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 135042 // <generalisation>
+	relation 135042 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 135042 // <generalisation>
+	  b parent class_ref 135170 // SurpriseCase
+      end
+
+      operation 136962 "DeathCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	    defaultvalue "58"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:SurpriseCase(number)  {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137090 "~DeathCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137218 "doSomeThing"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 135554 "Dice"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 134914 "MIN_DICE_VALUE"
+	class_attribute const_attribute public explicit_type "uint8_t"
+	init_value "=  1"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 135042 "MAX_DICE_VALUE"
+	class_attribute const_attribute public explicit_type "uint8_t"
+	init_value "=  6"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 135170 "value"
+	private explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 137346 "Dice"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137474 "roll"
+	preserve_cpp_body_indent public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137602 "getValue"
+	preserve_cpp_body_indent const public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 135682 "Game"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 135298 // players (<directional composition>)
+	relation 135298 *-->
+	  a role_name "players" multiplicity "2..4" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 135298 // players (<directional composition>)
+	  b parent class_ref 136066 // Player
+      end
+
+      classrelation 135554 // board (<directional composition>)
+	relation 135554 *-->
+	  a role_name "board" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 135554 // board (<directional composition>)
+	  b parent class_ref 134530 // Board
+      end
+
+      operation 137730 "Game"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "nbPlayers" explicit_type "ushort"
+	    defaultvalue "2"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137858 "doIt"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137986 "~Game"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 137346 // dices (<directional composition>)
+	relation 137346 *-->
+	  a role_name "dices" multiplicity "2" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	    classrelation_ref 137346 // dices (<directional composition>)
+	  b parent class_ref 135554 // Dice
+      end
+    end
+
+    class 136066 "Player"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 140674 "Player"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "board" type class_ref 134530 // Board
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "//Player::Player():pawn(*this, *(new Board())){};
+
+${inline}${typeprefix}${class}::${name}${(}${t0} & ${p0}${)} : pawn(*this,board){
+${body}}
+"
+	
+	
+	
+	
+	comment "	Player();//for test purpose"
+      end
+
+      operation 140802 "play"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param inout name "dices" explicit_type "Dices"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140930 "~Player"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+	comment "movePawn(roll(dices));
+"
+      end
+
+      operation 141186 "roll"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 1
+	  param inout name "dices" explicit_type "Dices"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 137474 // <dependency>
+	relation 137474 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 137474 // <dependency>
+	  b parent class_ref 134530 // Board
+      end
+
+      attribute 135810 "name"
+	private explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 143106 // getName
+      end
+
+      operation 143106 "getName"
+	force_body_gen const cpp_inline public explicit_return_type "char"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} ${name}${(}${)}${const}${volatile}${throw};
+"
+	cpp_def "${inline}const ${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  return name;
+}
+"
+	cpp_name_spec "get${Name}"
+	final 
+	java_name_spec "get${Name}"
+	php_final 
+	php_name_spec "get${Name}"
+	
+	python_name_spec "get${Name}"
+	
+	idl_name_spec "get_${name}"
+	get_of_attribute attribute_ref 135810 // name
+      end
+    end
+
+    class 136194 "GooseCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 135682 // <generalisation>
+	relation 135682 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 135682 // <generalisation>
+	  b parent class_ref 135170 // SurpriseCase
+      end
+
+      attribute 135298 "NB_CASES"
+	class_attribute const_attribute public explicit_type "ushort"
+	init_value "= 6"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 135426 "NUMBERS"
+	class_attribute const_attribute private explicit_type "unsigned short ,GooseCase::NB_CASES"
+	init_value "={9,18,27,36,45,53}"
+	stereotype "std::array"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 135554 "rank"
+	class_attribute private explicit_type "ushort"
+	init_value "=0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 138114 "GooseCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "//should manage out_of_range !
+
+${inline}${typeprefix}${class}::${name}${(}${)}:SurpriseCase(GooseCase::NUMBERS.at( GooseCase::rank++)) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138242 "GooseCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:SurpriseCase(number) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138370 "~GooseCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138498 "doSomeThing"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 136322 "HotelCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 135810 // <generalisation>
+	relation 135810 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 135810 // <generalisation>
+	  b parent class_ref 135170 // SurpriseCase
+      end
+
+      operation 138626 "HotelCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	    defaultvalue "19"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:SurpriseCase(number)  {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138754 "~HotelCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138882 "doSomeThing"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 136450 "JailCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 135938 // <generalisation>
+	relation 135938 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 135938 // <generalisation>
+	  b parent class_ref 135170 // SurpriseCase
+      end
+
+      operation 139010 "JailCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	    defaultvalue "52"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:SurpriseCase(number) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139138 "~JailCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139266 "doSomeThing"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 136578 "LabyrinthCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 136066 // <generalisation>
+	relation 136066 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 136066 // <generalisation>
+	  b parent class_ref 135170 // SurpriseCase
+      end
+
+      operation 139394 "LabyrinthCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	    defaultvalue "41"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:SurpriseCase(number) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139522 "~LabyrinthCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139650 "doSomeThing"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 136706 "StartCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 136706 // <generalisation>
+	relation 136706 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 136706 // <generalisation>
+	  b parent class_ref 134914 // Case
+      end
+
+      operation 141442 "StartCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	    defaultvalue "0"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:Case(number) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141570 "~StartCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141698 "doSomeThing"
+	preserve_cpp_body_indent cpp_virtual private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 136834 "WellCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 136962 // <generalisation>
+	relation 136962 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 136962 // <generalisation>
+	  b parent class_ref 135170 // SurpriseCase
+      end
+
+      operation 142338 "WellCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	    defaultvalue "31"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:SurpriseCase(number) {
+${body}}
+"
+	
+	
+	
+	
+	comment "WellCase IS A SurpriseCase which IS A Case"
+      end
+
+      operation 142466 "~WellCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142594 "doSomeThing"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 136962 "WinningCase"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 137090 // <generalisation>
+	relation 137090 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 137090 // <generalisation>
+	  b parent class_ref 134914 // Case
+      end
+
+      operation 142722 "WinningCase"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "number" explicit_type "ushort"
+	    defaultvalue "63"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} ${p0}${v0}${)}${volatile}${abstract};"
+	cpp_def "${comment}${inline}${typeprefix}${class}::${name}${(}const ${t0} ${p0}${)}:Case(number) {
+${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142850 "~WinningCase"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${abstract};"
+	cpp_def "${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142978 "doSomeThing"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${abstract};"
+	cpp_def "${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    classdiagram 134530 "gameCls"
+      classdiagramsettings draw_all_relations no member_max_width 0 end
+      size A0
+    end
+  end
+
+  deploymentview 134530 "GooseGame"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 134530 "Board"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 134530 // Board
+      end
+    end
+
+    artifact 134658 "BridgeCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 135042 // BridgeCase
+      end
+    end
+
+    artifact 134786 "Case"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 134914 // Case
+      end
+    end
+
+    artifact 134914 "DeathCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 135426 // DeathCase
+      end
+    end
+
+    artifact 135042 "Dice"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 135554 // Dice
+      end
+    end
+
+    artifact 135170 "Game"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 135682 // Game
+      end
+    end
+
+    artifact 135298 "GooseCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 136194 // GooseCase
+      end
+    end
+
+    artifact 135426 "HotelCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 136322 // HotelCase
+      end
+    end
+
+    artifact 135554 "JailCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 136450 // JailCase
+      end
+    end
+
+    artifact 135682 "LabyrinthCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 136578 // LabyrinthCase
+      end
+    end
+
+    artifact 135810 "Pawn"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 135298 // Pawn
+      end
+    end
+
+    artifact 135938 "Player"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 136066 // Player
+      end
+    end
+
+    artifact 136066 "StartCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 136706 // StartCase
+      end
+    end
+
+    artifact 136194 "SurpriseCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 135170 // SurpriseCase
+      end
+    end
+
+    artifact 136322 "WellCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 136834 // WellCase
+      end
+    end
+
+    artifact 136450 "WinningCase"
+      stereotype "source"
+      cpp_h "/**
+* \\file ${name}.h
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "/*****************************************************
+* \\file ${name}.cpp
+* $Author$
+* $Rev$
+* $Date$
+
+\\brief Projet : nomProjet
+*******************************************************/
+${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}
+
+#ifndef NDEBUG
+/*
+compléter la ligne de commande de génération pour le test unitaire
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _${name}_UT_ .....
+ou
+g++ -o ${name}Ut ${name}.cpp -O3 -std=c++14 -D _CLASSE_ABSTRAITE_ -D _${name}_UT_ .....
+
+commande de compilation générant le fichier objet
+
+g++ -c ${name}.cpp -O3 -std=c++14 -D NDEBUG 
+*/
+#include <assert.h>
+#ifdef _${name}_UT_
+  #ifdef _CLASSE_ABSTRAITE_
+    class Test: public ${namespace}::${name}{
+      public:
+        Test(parametres):${name}(parametres){} 
+       //définir toutes les méthodes abstraites (i.e. =0) avec un corps vide
+     };
+ #endif // _CLASSE_ABSTRAITE_
+int main(int argc, char** argv){
+  #ifdef _CLASSE_ABSTRAITE_
+   ${namespace}::${name}* ptrInstance =new Test(parametres);
+  type valeur=?????;
+  ptrInstance->setAttr1(valeur);
+  assert(ptrInstance->getAttr1() == valeur);
+ #else
+  //instanciation de la classe à tester
+  ${namespace}::${name} instance(parametres);
+  //test de chaque méthode ; ici les accesseurs et mutateurs
+  type valeur=?????;
+  instance.setAttr1(valeur);
+  assert(instance.getAttr1() == valeur);
+ #endif // _CLASSE_ABSTRAITE_
+}
+#endif
+#endif"
+      associated_elems
+	class_ref 136962 // WinningCase
+      end
+    end
+
+    artifact 136578 "main"
+      stereotype "source"
+      cpp_src "int main(int argc, char **argv) {
+
+	Board board;
+	/*
+	try{
+	for (auto& player:players)
+		player.play();
+	for (auto aCase:board.getCases())
+		aCase->check();
+}catch (std::stinf& e){
+	std::cout << \"GameOver\";
+}
+*/
+
+	for (auto& aCase:board.getCases())
+		aCase->check();
+ board.getCase(0);
+	return 0;
+	/*
+	WinningCase c;
+
+ Case& aCase=(WinningCase());
+	aCase.doSomeThing();
+*/
+}
+"
+      associated_elems
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class WellCase
+!!!142338.cpp!!!	WellCase(in number : ushort = 31)
+
+!!!142594.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): you fell in a well!\n";

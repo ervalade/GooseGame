@@ -1,0 +1,50 @@
+format 222
+
+classcanvas 128002 class_ref 135810 // Player
+  classdiagramsettings member_max_width 0 end
+  xyz 51 78 2000
+end
+classcanvas 128130 class_ref 135298 // Pawn
+  classdiagramsettings member_max_width 0 end
+  xyz 550 77 2006
+end
+classcanvas 128386 class_ref 135170 // Case
+  classdiagramsettings member_max_width 0 end
+  xyz 576 375 2012
+end
+classcanvas 128770 class_ref 135554 // Dice
+  classdiagramsettings member_max_width 0 end
+  xyz 53 422 2000
+end
+classcanvas 129282 class_ref 134530 // Board
+  classdiagramsettings member_max_width 0 end
+  xyz 960 407 2000
+end
+relationcanvas 128258 relation_ref 136194 // <unidirectional association>
+  from ref 128002 z 2007 to ref 128130
+  role_a_pos 499 126 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 134914 // <unidirectional association>
+  from ref 128386 z 2013 to point 791 322
+  line 129154 z 2013 to ref 128130
+  role_a_pos 762 244 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128642 relation_ref 136066 // <unidirectional association>
+  from ref 128130 z 2013 to point 638 321
+  line 129026 z 2013 to ref 128386
+  role_a_pos 662 345 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 136706 // <dependency>
+  from ref 128002 z 2001 to ref 128770
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129538 relation_ref 136834 // <directional composition>
+  from ref 129282 z 2013 stereotype "<<array>>" xyz 856 507 3000 to ref 128386
+  role_a_pos 832 479 3000 no_role_b
+  multiplicity_a_pos 832 519 3000 no_multiplicity_b
+end
+end

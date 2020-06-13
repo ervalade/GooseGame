@@ -1,0 +1,9 @@
+class Game
+!!!137858.cpp!!!	doIt() : void
+	/*
+	currentPlayer=this->whoPlayInFirst();
+	currentPlayer.play();
+	board.check();
+*/
+!!!137986.cpp!!!	~Game()
+	// TODO Auto-generated destructor stub

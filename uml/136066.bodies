@@ -1,0 +1,9 @@
+class Player
+!!!140802.cpp!!!	play(inout dices : Dices) : void
+	this->movePawn(this->roll(dices));
+!!!141186.cpp!!!	roll(inout dices : Dices) : uint8_t
+	uint8_t steps(0);
+	for (auto &dice : dices) {
+		steps += dice.roll();
+	}
+	return steps;

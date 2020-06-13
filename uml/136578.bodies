@@ -1,0 +1,8 @@
+class LabyrinthCase
+!!!139394.cpp!!!	LabyrinthCase(in number : ushort = 41)
+	// TODO Auto-generated constructor stub
+
+!!!139522.cpp!!!	~LabyrinthCase()
+	// TODO Auto-generated destructor stub
+!!!139650.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): you are in the labyrinth ! Good luck\n";

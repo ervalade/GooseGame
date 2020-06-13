@@ -1,0 +1,48 @@
+/*
+Classes
+un joueur lance 2 dès , l'addition' des valeurs des dés
+donne l'avancement ' du pion associé au juoeur
+sur une case du terrain
+
+
+	Player
+		1 pawn
+		launch() dices
+		movePawn()
+	Dice
+		6 faces
+		launch() -> value
+	Board
+	Start point
+	* 64 cases
+	* 	12 SurpriseCases
+	* 		6 GooseCases  9,18,27,36,45,53
+	* 		1 WellCase 31
+	* 		1 BridgeCase  6
+	* 		1 HotelCase 19
+	* 		1 LabyrinthCase 41
+	* 		1 JailCase 52
+	* 		1 DeathCase 58
+	Pawn
+	   placed on a case of the board
+	   move()
+	Case
+	number
+	pawn
+	*  doEffect()
+		SurpriseCase
+		 doEffect
+			BridgeCase
+			* doEffect() -> rtfm
+			HotelCase
+		.....
+	Game
+	   n Players
+	   2 Dices
+	   1 Board
+	   rules
+	   doIt() -> each player launches Dice when authorized
+	   * 		 applies rules according to the pawn position
+	   * 		check if current player wins if so end the game
+		
+*/	

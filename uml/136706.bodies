@@ -1,0 +1,9 @@
+class StartCase
+!!!141442.cpp!!!	StartCase(in number : ushort = 0)
+	// TODO Auto-generated constructor stub
+
+!!!141570.cpp!!!	~StartCase()
+	// TODO Auto-generated destructor stub
+!!!141698.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): you are on start, ready to play\n";
+

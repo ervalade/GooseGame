@@ -1,0 +1,3 @@
+class BridgeCase
+!!!135682.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): you are on the bridge\n";

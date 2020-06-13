@@ -1,0 +1,14 @@
+window_sizes 1877 1056 371 1500 849 144
+cleanlooks_style
+diagrams
+  active  classdiagram_ref 134530 // gameCls
+    1500 849 100 A0 0 0
+end
+show_stereotypes
+selected attribute_ref 135810 // name
+open
+  class_ref 134530 // Board
+  class_ref 134914 // Case
+  class_ref 136066 // Player
+end
+end

@@ -1,0 +1,10 @@
+class Dice
+!!!137346.cpp!!!	Dice()
+	srand(time(NULL));
+	this->roll();
+!!!137474.cpp!!!	roll() : uint8_t
+	this->value= (rand() % (Dice::MAX_DICE_VALUE - Dice::MIN_DICE_VALUE + 1))
+			+ Dice::MIN_DICE_VALUE;
+	return this->value;
+!!!137602.cpp!!!	getValue() : uint8_t
+	return value;

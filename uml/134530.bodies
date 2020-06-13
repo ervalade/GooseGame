@@ -1,0 +1,11 @@
+class Board
+!!!134530.cpp!!!	Board()
+
+	this->addOtherCases(this->addSurpriseCases(0));
+
+!!!134658.cpp!!!	~Board()
+	for (auto &aCase : this->cases) {
+		delete aCase;
+	}
+!!!134786.cpp!!!	getCases() : Cases
+	return cases;

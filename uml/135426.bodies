@@ -1,0 +1,8 @@
+class DeathCase
+!!!136962.cpp!!!	DeathCase(in number : ushort = 58)
+	// TODO Auto-generated constructor stub
+
+!!!137090.cpp!!!	~DeathCase()
+	// TODO Auto-generated destructor stub
+!!!137218.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): you are dead\n";

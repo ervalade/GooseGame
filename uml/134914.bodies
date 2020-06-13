@@ -1,0 +1,6 @@
+class Case
+!!!136322.cpp!!!	~Case()
+	// TODO Auto-generated destructor stub
+!!!136450.cpp!!!	getNumber() : ushort
+	return this->number;
+

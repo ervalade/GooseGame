@@ -1,0 +1,8 @@
+class WinningCase
+!!!142722.cpp!!!	WinningCase(in number : ushort = 63)
+	// TODO Auto-generated constructor stub
+
+!!!142850.cpp!!!	~WinningCase()
+	// TODO Auto-generated destructor stub
+!!!142978.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): you are the winner ! Congratulation \n";

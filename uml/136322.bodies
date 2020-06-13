@@ -1,0 +1,8 @@
+class HotelCase
+!!!138626.cpp!!!	HotelCase(in number : ushort = 19)
+	// TODO Auto-generated constructor stub
+
+!!!138754.cpp!!!	~HotelCase()
+	// TODO Auto-generated destructor stub
+!!!138882.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): you can sleep in the hotel\n";

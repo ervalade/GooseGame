@@ -1,0 +1,3 @@
+class JailCase
+!!!139266.cpp!!!	doSomeThing() : void
+	std::cout << "Case(" <<this->number <<"): you are a bad guy ! go to jail\n";

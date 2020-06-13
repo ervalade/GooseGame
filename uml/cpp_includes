@@ -1,0 +1,17 @@
+// "a type" "needed cpp_includes"
+"std::vector" "#include <vector>
+"
+
+"std::list" "#include <list>
+"
+
+"std::map" "#include <map>
+"
+
+"std::string" "#include <string>
+"
+
+"std::ostream" "#include <iostream>"
+
+"std::istream" "#include <iostream>"
+

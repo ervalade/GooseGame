@@ -1,0 +1,15 @@
+class Pawn
+!!!139778.cpp!!!	Pawn(inout player : Player, inout board : Board)
+	this->aCase->addPawn(this);
+!!!140034.cpp!!!	move(in steps : int) : void
+//	if (this->aCase != nullptr) { // test if first turn pawn is on start area
+		this->aCase->removePawn(this);
+//	}
+	this->aCase = this->board.getCase(this->aCase->getNumber() + steps); //new case number
+	this->aCase->addPawn(this);
+!!!140290.cpp!!!	getCase() : Case
+	return aCase;
+!!!140418.cpp!!!	setCase(inout aCase : Case) : void
+	this->aCase = aCase;
+!!!140546.cpp!!!	getPlayer() : Player
+	return player;
