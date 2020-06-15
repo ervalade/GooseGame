@@ -6,12 +6,12 @@
  */
 
 #include <Player.h>
-Player::Player(char name):name(name){
+Player::Player(std::string name):name(name),piece(nullptr){
 }
 
 
-uint8_t Player::rollDices(Game::Dices &dices) {
-	uint8_t steps(0);
+unsigned short Player::throwDices(Dices &dices) {
+	unsigned short steps(0);
 	for (auto &dice : dices) {
 		steps += dice.roll();
 	}
@@ -21,6 +21,18 @@ uint8_t Player::rollDices(Game::Dices &dices) {
 Player::~Player() {
 }
 
-char Player::getName() const {
+void Player::setName(const std::string &name) {
+	this->name = name;
+}
+
+ Piece*& Player::getPiece()  {
+	return piece;
+}
+
+void Player::setPiece(const Piece *&piece) {
+	this->piece = piece;
+}
+
+std::string  Player::getName() const {
 	return name;
 }

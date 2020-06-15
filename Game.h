@@ -27,6 +27,8 @@ public:
 	Game(const int playerNb=2);
 	void doIt();
 	virtual ~Game();
+	Board& getBoard() ;
+	Game::Dices& getDices() ;
 };
 
 #endif /* GAME_H_ */

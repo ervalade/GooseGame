@@ -14,11 +14,11 @@ Dice::Dice() {
 	this->roll();
 }
 
-uint8_t Dice::getValue() const {
+unsigned short  Dice::getValue() const {
 	return value;
 }
 
-uint8_t Dice::roll() {
+unsigned short  Dice::roll() {
 	this->value= (rand() % (Dice::MAX_DICE_VALUE - Dice::MIN_DICE_VALUE + 1))
 			+ Dice::MIN_DICE_VALUE;
 	return this->value;

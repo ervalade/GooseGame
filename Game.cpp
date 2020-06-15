@@ -34,7 +34,7 @@ void Game::doIt() {
 	int dicesValue(0);
 	for (auto &player : players) {
 		while (true) {
-			dicesValue = -player->rollDices(dices); //minus for reverse + sort
+			dicesValue = -player->throwDices(dices); //minus for reverse + sort
 			std::cout << player->getName() << " rolled dices : " << -dicesValue
 					<< std::endl;
 			if (orderedPlayers.find(dicesValue) == orderedPlayers.end()) {
@@ -50,9 +50,16 @@ void Game::doIt() {
 		std::cout << " Game is starting =========" << std::endl;
 	}
 	for (auto &player : orderedPlayers) {
-		dicesValue = player.second->rollDices(dices);
+		dicesValue = player.second->throwDices(dices);
 		std::cout << player.second->getName() << " rolled dice: " << dicesValue
 				<< std::endl;
 	}
 
+}
+
+Board& Game::getBoard()  {
+	return board;
+}
+ Game::Dices& Game::getDices()  {
+	return dices;
 }

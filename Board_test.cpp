@@ -5,35 +5,34 @@
  *      Author: eric
  */
 /*
-g++ -o Board_test Board_test.cpp *Case.cpp Board.cpp -I./ -std=c++14 && ./Board_test
+g++ -o Board_test Board_test.cpp *Space.cpp Dice.cpp Player.cpp Game.cpp Board.cpp -I./ -std=c++14 && ./Board_test
  */
-#include <Board.h>
+#include <Game.h>
 #include <cassert>
-#include <WinningCase.h>
-#include <SurpriseCase.h>
+
 
 int main(int argc, char **argv) {
-
-	Board board;
+	Game game;
+	Board& board=game.getBoard();
 	/*
-	try{
-	for (auto& player:players)
-		player.play();
-	for (auto aCase:board.getCases())
-		aCase->check();
-}catch (std::stinf& e){
-	std::cout << "GameOver";
-}
-*/
+	 try{
+	 for (auto& player:players)
+	 player.play();
+	 for (auto aSpace:board.getSpaces())
+	 aSpace->check();
+	 }catch (std::stinf& e){
+	 std::cout << "GameOver";
+	 }
+	 */
 
-	for (auto& space:board.getSpaces())
-		space->check();
- board.getSpace(0);
+	for (auto &space : board.getSpaces())
+		space->check(game);
+	board.getSpace(0);
 	return 0;
 	/*
-	WinningCase c;
+	 WinningSpace c;
 
- Case& aCase=(WinningCase());
-	aCase.doSomeThing();
-*/
+	 Space& aSpace=(WinningSpace());
+	 aSpace.doSomeThing();
+	 */
 }
