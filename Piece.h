@@ -8,9 +8,7 @@
 #ifndef PIECE_H_
 #define PIECE_H_
 
-class Board;
 class Space;
-class Player;
 class Piece {
 public:
 	enum class Color{
@@ -20,17 +18,14 @@ public:
 		yellow
 	};
 private:
-	Player& player;
-	Board& board;
 	Space* space;
 public:
-	Piece(Player& player,Board& board);
+	Piece();
 	Piece();//for test purpose
 	void move(int steps);
 	virtual ~Piece();
 	Space* getSpace() const;
 	void setSpace(Space *aSpace);
-	const Player& getPlayer() const;
 };
 #include <map>
 using Pieces=std::map<Piece::color,Piece*>;

@@ -34,10 +34,14 @@ int main(int argc, char **argv) {
 			{Piece::Color::green,new Piece()},
 			{Piece::Color::yellow,new Piece()},
 	};
+	for (auto& piece:pi)
 	Players players={
 	{new Player("Pierre"),pieces.at(Piece::Color::red)} ,
 	{new Player("Paul"),pieces.at(Piece::Color::blue)},
 	{new Player("Martine"),pieces.at(Piece::Color::green)}};
+	for (auto& piece:pieces){
+		piece->second.setSpace(board.getStartSpace());
+	}
 
 	Game game(board,dices,players);
 	game.doIt();

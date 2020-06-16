@@ -5,16 +5,15 @@
  *      Author: eric
  */
 
-#include <Board.h>
 #include <Piece.h>
 #include <array>
-#include <Player.h>
+#include <Space.h>
 /*
 Piece::Piece():player(*(new Player())),board(*(new Board())){
 };
 */
-Piece::Piece(Player &player, Board &board) :
-		player(player), board(board), piece(board.getStartSpace()) {
+Piece::Piece() :
+		piece(board.getStartSpace()) {
 	this->piece->addPiece(this);
 }
 
