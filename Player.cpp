@@ -6,9 +6,11 @@
  */
 
 #include <Player.h>
-Player::Player(std::string name):name(name),piece(nullptr){
-}
+Player::Players Player::players;
 
+Player::Player(std::string name) :
+		name(name) {
+}
 
 unsigned short Player::throwDices(Dices &dices) {
 	unsigned short steps(0);
@@ -25,14 +27,6 @@ void Player::setName(const std::string &name) {
 	this->name = name;
 }
 
- Piece*& Player::getPiece()  {
-	return piece;
-}
-
-void Player::setPiece(const Piece *&piece) {
-	this->piece = piece;
-}
-
-std::string  Player::getName() const {
+std::string Player::getName() const {
 	return name;
 }

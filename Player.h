@@ -10,21 +10,22 @@
 #include <string>
 #include <Dice.h>
 #include <Piece.h>
+#include <map>
+
 //class Piece;
 class Player {
 private:
 	std::string name;
-	Piece* piece;
 public:
 	Player(std::string name);
 	virtual ~Player();
 	unsigned short throwDices(Dices& dices);
 	std::string  getName() const;
 	void setName(const std::string &name);
-	 Piece*& getPiece() ;
-	void setPiece(const Piece *&piece);
+public:
+	using Players=std::map<Piece*,Player*>;
+	static Players players;
+	static void add(Piece* piece,Player* player);
 };
-#include <map>
-using Players=std::map<Player*,Piece*>;
 
 #endif /* PLAYER_H_ */

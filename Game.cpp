@@ -49,10 +49,14 @@ void Game::doIt() {
 		std::cout << "end of player Ordering ==========" << std::endl;
 		std::cout << " Game is starting =========" << std::endl;
 	}
+	Player& currentPlayer=orderedPlayers.;
+
 	for (auto &player : orderedPlayers) {
+		curentPlayer
 		dicesValue = player.second->throwDices(dices);
 		std::cout << player.second->getName() << " rolled dice: " << dicesValue
 				<< std::endl;
+
 	}
 
 }

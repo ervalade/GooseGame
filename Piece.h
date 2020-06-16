@@ -7,7 +7,8 @@
 
 #ifndef PIECE_H_
 #define PIECE_H_
-
+#include <map>
+#include <Board.h>
 class Space;
 class Piece {
 public:
@@ -21,12 +22,11 @@ private:
 	Space* space;
 public:
 	Piece();
-	Piece();//for test purpose
-	void move(int steps);
+	void move(int steps,Board& board);
 	virtual ~Piece();
 	Space* getSpace() const;
 	void setSpace(Space *aSpace);
+	using Pieces=std::map<Piece::Color,Piece*>;
+	static Pieces pieces;
 };
-#include <map>
-using Pieces=std::map<Piece::color,Piece*>;
 #endif /* PIECE_H_ */
