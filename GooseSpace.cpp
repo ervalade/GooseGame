@@ -19,7 +19,7 @@ GooseSpace::~GooseSpace() {
 	// TODO Auto-generated destructor stub
 }
 #include <iostream>
-bool GooseSpace::doSomeThing(Game& game) {
+bool GooseSpace::applyRule(Game& game) {
 	std::cout << "Space(" <<this->number <<"): catch the goose !\n";
 	return true;//
 }

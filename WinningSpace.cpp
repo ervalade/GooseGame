@@ -17,7 +17,7 @@ WinningSpace::~WinningSpace() {
 }
 
 #include <iostream>
-bool WinningSpace::doSomeThing(Game& game) {
+bool WinningSpace::applyRule(Game& game) {
 	std::cout << "Space(" <<this->number <<"): you are the winner ! Congratulation \n";
 	return true;
 }

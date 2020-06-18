@@ -15,7 +15,7 @@ public:
 	HotelSpace(const unsigned short number=19);
 	virtual ~HotelSpace();
 private:
-	bool doSomeThing(Game& game);
+	bool applyRule(Game& game);
 };
 
 #endif /* HOTELSPACE_H_ */

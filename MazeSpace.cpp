@@ -17,8 +17,8 @@ MazeSpace::~MazeSpace() {
 }
 
 #include <iostream>
-bool MazeSpace::doSomeThing(Game &game) {
-	HazardSpace::doSomeThing(game);
+bool MazeSpace::applyRule(Game &game) {
+	HazardSpace::applyRule(game);
 	std::cout << "Space(" <<this->number <<"): you are in the maze !\n";
 	return true;
 }

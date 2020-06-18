@@ -10,10 +10,9 @@
 #include <DeathSpace.h>
 #include <GooseSpace.h>
 #include <HotelSpace.h>
-#include <JailSpace.h>
 #include <MazeSpace.h>
+#include <PrisonSpace.h>
 #include <StartSpace.h>
-
 #include <WellSpace.h>
 #include <WinningSpace.h>
 std::array<unsigned short, Board::NB_CASES> Board::numbers = { 0, 1, 2, 3, 4, 5,
@@ -44,7 +43,7 @@ unsigned short Board::addHazardSpaces(unsigned short rank) {
 	this->spaces.at(rank++) = new WellSpace();
 	this->spaces.at(rank++) = new BridgeSpace();
 	this->spaces.at(rank++) = new HotelSpace();
-	this->spaces.at(rank++) = new JailSpace();
+	this->spaces.at(rank++) = new PrisonSpace();
 	this->spaces.at(rank++) = new MazeSpace();
 	this->spaces.at(rank++) = new DeathSpace();
 	return rank;

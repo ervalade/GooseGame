@@ -13,8 +13,8 @@ BridgeSpace::~BridgeSpace() {
 BridgeSpace::BridgeSpace(const unsigned short number) : HazardSpace(number) {
 }
 #include <iostream>
-bool BridgeSpace::doSomeThing(Game& game) {
-	HazardSpace::doSomeThing(game);
+bool BridgeSpace::applyRule(Game& game) {
+	HazardSpace::applyRule(game);
 	std::cout << "Space(" <<this->number <<"): you are on the bridge\n";
 	return true;
 }

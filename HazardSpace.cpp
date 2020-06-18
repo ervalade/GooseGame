@@ -6,18 +6,19 @@
  */
 
 #include <HazardSpace.h>
+/*
 HazardSpace::HazardSpace():Space() {
 	// TODO Auto-generated constructor stub
 }
-
-HazardSpace::HazardSpace(const unsigned short number):Space(number) {
+*/
+HazardSpace::HazardSpace(Board& board,const unsigned short number):Space(board,number) {
 }
 
 HazardSpace::~HazardSpace() {
 	// TODO Auto-generated destructor stub
 }
 #include <iostream>
-bool HazardSpace::doSomeThing(Game &game) {
+bool HazardSpace::applyRule() {
 	std::cout << "Space(" << this->number << "): no luck for you! \n";
 	return true;
 }

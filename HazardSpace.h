@@ -17,12 +17,12 @@ class HazardSpace: public Space {//inheritance : generalization or specializatio
 
 public:
 	static const int NB_CASES=6;
-	HazardSpace();
-	HazardSpace(const unsigned short number);
+//	HazardSpace();
+	HazardSpace(Board& board,const unsigned short number);
 
 	virtual ~HazardSpace();
 protected:
-	bool doSomeThing(Game& game);
+	bool applyRule();
 };
 
 #endif /* HAZARDSPACE_H_ */

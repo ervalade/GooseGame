@@ -18,8 +18,8 @@ HotelSpace::~HotelSpace() {
 
 
 #include <iostream>
-bool HotelSpace::doSomeThing(Game& game) {
-	HazardSpace::doSomeThing(game);
+bool HotelSpace::applyRule(Game& game) {
+	HazardSpace::applyRule(game);
 	std::cout << "Case(" <<this->number <<"): you can sleep in the hotel\n";
 	return false;
 }

@@ -21,7 +21,7 @@ public:
 	GooseSpace(const unsigned short number);
 	virtual ~GooseSpace();
 private:
-	bool doSomeThing(Game& game);
+	bool applyRule(Game& game);
 };
 
 #endif /* GOOSESPACE_H_ */

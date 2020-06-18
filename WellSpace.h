@@ -16,7 +16,7 @@ public:
 	WellSpace(const unsigned short number=31);
 	virtual ~WellSpace();
 private:
-	bool doSomeThing(Game& game);
+	bool applyRule(Game& game);
 };
 
 #endif /* WELLSPACE_H_ */

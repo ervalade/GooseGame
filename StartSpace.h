@@ -15,7 +15,7 @@ public:
 	StartSpace(const unsigned short number = 0);
 	virtual ~StartSpace();
 private:
-	bool doSomeThing(Game& game);
+	bool applyRule(Game& game);
 };
 
 #endif /* STARTSPACE_H_ */

@@ -22,7 +22,7 @@ private:
 	Space* space;
 public:
 	Piece();
-	void move(int steps,Board& board);
+	void moveToSpace(int steps, Board& board);
 	virtual ~Piece();
 	Space* getSpace() const;
 	void setSpace(Space *aSpace);

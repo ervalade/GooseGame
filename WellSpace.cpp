@@ -15,8 +15,8 @@ WellSpace::~WellSpace() {
 }
 
 #include <iostream>
-bool WellSpace::doSomeThing(Game& game) {
-	HazardSpace::doSomeThing(game);
+bool WellSpace::applyRule(Game& game) {
+	HazardSpace::applyRule(game);
 	std::cout << "Space(" <<this->number <<"): you fell in a well!\n";
 	return true;
 }

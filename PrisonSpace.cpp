@@ -5,18 +5,18 @@
  *      Author: eric
  */
 
-#include <JailSpace.h>
+#include <PrisonSpace.h>
 
-JailSpace::JailSpace(const unsigned short number) :
+PrisonSpace::PrisonSpace(const unsigned short number) :
 		HazardSpace(number) {
 }
 
-JailSpace::~JailSpace() {
+PrisonSpace::~PrisonSpace() {
 }
 
 #include <iostream>
-bool JailSpace::doSomeThing(Game &game) {
-	HazardSpace::doSomeThing(game);
+bool PrisonSpace::applyRule(Game &game) {
+	HazardSpace::applyRule(game);
 	std::cout << "Space(" << this->number
 			<< "): you are a bad guy ! go to jail\n";
 	return true;

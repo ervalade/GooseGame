@@ -15,7 +15,7 @@ public:
 	WinningSpace(const unsigned short number=63);
 	virtual ~WinningSpace();
 private:
-	bool doSomeThing(Game& game);
+	bool applyRule(Game& game);
 };
 
 #endif /* WINNINGSPACE_H_ */

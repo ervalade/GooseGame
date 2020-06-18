@@ -8,7 +8,7 @@
 #ifndef BOARD_H_
 #define BOARD_H_
 
-#include <HazardSpace.h>
+#include <Space.h>
 #include <array>
 
 class Board {

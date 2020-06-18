@@ -17,8 +17,8 @@ DeathSpace::~DeathSpace() {
 }
 
 #include <iostream>
-bool DeathSpace::doSomeThing(Game& game) {
-	HazardSpace::doSomeThing(game);
+bool DeathSpace::applyRule(Game& game) {
+	HazardSpace::applyRule(game);
 	std::cout << "Space(" <<this->number <<"): you are dead\n";
 	return true;
 }

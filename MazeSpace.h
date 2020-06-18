@@ -15,7 +15,7 @@ public:
 	MazeSpace(const unsigned short number=41);
 	virtual ~MazeSpace();
 private:
-	bool doSomeThing(Game& game);
+	bool applyRule(Game& game);
 };
 
 #endif /* MAZESPACE_H_ */

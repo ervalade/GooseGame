@@ -15,7 +15,7 @@ public:
 	DeathSpace(const unsigned short number=58);
 	virtual ~DeathSpace();
 private:
-	bool doSomeThing(Game& game);
+	bool applyRule(Game& game);
 };
 
 #endif /* DEATHSPACE_H_ */

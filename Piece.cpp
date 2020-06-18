@@ -8,11 +8,7 @@
 #include <Piece.h>
 #include <array>
 #include <Space.h>
-/*
-Piece::Piece():player(*(new Player())),board(*(new Board())){
-};
-*/
-Piece::Piece() {
+Piece::Piece():space(nullptr) {
 }
 
 Piece::~Piece() {
@@ -25,7 +21,8 @@ Space* Piece::getSpace() const {
 void Piece::setSpace(Space *space) {
 	this->space = space;
 }
-void Piece::move(int steps, Board& board) {
+
+void Piece::moveToSpace(int steps, Board& board) {
 //	if (this->piece != nullptr) { // test if first turn pawn is on start area
 		this->space->removePiece(this);
 //	}

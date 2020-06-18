@@ -16,7 +16,7 @@ StartSpace::~StartSpace() {
 	// TODO Auto-generated destructor stub
 }
 #include <iostream>
-bool StartSpace::doSomeThing(Game& game) {
+bool StartSpace::applyRule(Game& game) {
 	std::cout << "Space(" <<this->number <<"): you are on start, ready to play\n";
 	return false;
 }

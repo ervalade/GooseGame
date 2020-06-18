@@ -6,14 +6,16 @@
  */
 
 #include <Space.h>
-Space::Space() :
+#include <Board.h>
+#include<Piece.h>
+/*
+Space::Space(Board& board):board(board),
 		number(0) {
 }
-
-Space::Space(const unsigned short number) :
-		number(number) {
+*/
+Space::Space(Board& board,  const unsigned short number) :
+board(board),number(number) {
 }
-
 Space::~Space() {
 	// TODO Auto-generated destructor stub
 }
@@ -30,9 +32,9 @@ void Space::addPiece(Piece *piece) {
 bool Space::isFree() {
 	return (this->pieces.size() == 0);
 }
-bool Space::check(Game& game) {
+bool Space::check() {
 	if (!this->isFree())
-		return this->doSomeThing(game);
+		return this->applyRule();
 	return false;
 }
 #include <algorithm>
@@ -42,7 +44,10 @@ void Space::removePiece(Piece *piece) {
 }
 #include <iostream>
 
-bool Space::doSomeThing(Game& game) {
+bool Space::applyRule() {
+	//change space of the piece(s) on the board
+	//this->pieces.back()->moveToSpace(10, this->board);
+	//this->removePiece(this->pieces.back());
 	std::cout << "Space(" << this->number << "): no thing special to do\n";
 	return false;// true is some thing done
 }

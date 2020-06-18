@@ -15,7 +15,7 @@ public:
 	BridgeSpace(const unsigned short number = 6);
 	virtual ~BridgeSpace();
 private:
-	bool doSomeThing(Game& game);
+	bool applyRule(Game& game);
 
 };
 
