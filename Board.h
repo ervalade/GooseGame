@@ -13,14 +13,24 @@
 
 class Board {
 private://associations
-	static const unsigned short NB_SPACES=64;
+	static const unsigned short NB_SPACES=75;
 	using Spaces=std::array<Space*, Board::NB_SPACES>;
 	Spaces spaces;
 
 public:
-	Board();
+	Board();//build the board => add the various spaces
 	virtual ~Board();
 	Spaces& getSpaces() ;
+private:
+	.... addHazardSpaces(....);//instanciation
+	.... addOutOfSpaces(...);//loop
+	.... addGooseSpaces(...);//loop
+	.... addRegularSpaces(...);//not so easy
+	.... addStartWinningSpaces(...);//instanciation
+
+
+
+
 };
 
 #endif /* BOARD_H_ */

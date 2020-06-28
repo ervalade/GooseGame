@@ -1,23 +1,29 @@
 /*
- * Case.cpp
+ * Space.cpp
  *
- *  Created on: 4 juin 2020
+ *  Created on: 18 juin 2020
  *      Author: eric
  */
 
 #include <Space.h>
-Space::Space() :
-		number(0) {
-}
+#include <iostream>
+Space::Space(unsigned short number):number(number) {
+	std::cout << "Space is instanciated" << std::endl;
 
-Space::Space(const unsigned short number) :
-		number(number) {
-}
-
-Space::~Space() {
 }
 
 unsigned short Space::getNumber() const {
-	return this->number;
-
+	return number;
 }
+void Space::applyRule() {
+	std::cout << "Regular space("<< this->number<<") is applying rule" << std::endl;
+}
+
+void Space::setNumber(unsigned short number) {
+	this->number = number;
+}
+
+Space::~Space() {
+	std::cout << "Space is deleted" << std::endl;
+}
+

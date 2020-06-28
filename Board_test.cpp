@@ -27,8 +27,7 @@ int main(int argc, char **argv) {
 */
 
 	for (auto& space:board.getSpaces())
-		space->check();
- board.getSpace(0);
+		space->applyRule();
 	return 0;
 	/*
 	WinningCase c;

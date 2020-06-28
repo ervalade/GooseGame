@@ -9,7 +9,9 @@
 
 
 Board::Board() {
-
+	.... addHazardSpaces(....);
+	... addOutOfSpaces(...);
+....
 }
 
 Board::Spaces& Board::getSpaces() {
